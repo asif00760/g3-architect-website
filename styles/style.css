@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+/* Dark1 */
+
+/* dark2 */
+.text-gray{
+   color:#424242 ;
+}
+/* dark3 */
+.text-light-gray{
+  color: #727272;
+}
+/* Header style */
+.navbar{
+   justify-content: space-between;
+   max-width: 1440px;
+   margin: 0 auto;
+   align-items: center;
+}
+.nav-links{
+    list-style: none;
+    
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-item{
+    margin: 20px;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.banner{
+    justify-content: center;
+    align-items: center;
+}
+/* banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem ;
+    font-weight: 700;
+}
+.banner-image{
+    width: 100%;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px ;
+}
+/* feature related styles */
+
+.teams{
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.feature-title{
+
+}
+#quick-list{
+    font-size: 45px;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 500;
+}
+#of-our{
+    font-size: 45px;
+    color: rgba(19, 19, 19, 1);
+    font-weight: 700;
+}
+#ftr{
+    font-size: 45px;
+    color: rgba(255, 144, 14, 1);
+    font-weight: 600;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+/* responsive media query */
+@media  screen and (max-width:576px) {
+    .navbar, .nav-links, .teams{
+          flex-direction: column;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin: 20px;
+    }
+}
+/* Medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+}
